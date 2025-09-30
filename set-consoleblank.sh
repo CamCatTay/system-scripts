@@ -36,13 +36,5 @@ update-grub
 
 echo -e "${GREEN}[✓] Done. consoleblank=$TIMEOUT has been set.${RESET}"
 echo
-
-# prompt reboot
-echo -en "${YELLOW}Reboot now? (y/n): ${RESET}"
-read answer
-
-case "$answer" in
-    [Yy]* ) echo -e "${GREEN}[*] Rebooting...${RESET}"; reboot ;;
-    [Nn]* ) echo -e "${YELLOW}[*] Reboot skipped. Changes will be applied on next boot.${RESET}" ;;
-    * ) echo -e "${RED}[!] Invalid input. Not rebooting.${RESET}" ;;
-esac
+echo -e "${YELLOW}[!] Please reboot for changes to take effect.${RESET}"
+echo
