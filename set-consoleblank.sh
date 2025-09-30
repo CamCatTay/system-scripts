@@ -38,7 +38,9 @@ echo -e "${GREEN}[✓] Done. consoleblank=$TIMEOUT has been set.${RESET}"
 echo
 
 # prompt reboot
-read -rp "$(echo -e ${YELLOW}'Reboot now? (y/n): '${RESET})" answer
+echo -en "${YELLOW}Reboot now? (y/n): ${RESET}"
+read answer
+
 case "$answer" in
     [Yy]* ) echo -e "${GREEN}[*] Rebooting...${RESET}"; reboot ;;
     [Nn]* ) echo -e "${YELLOW}[*] Reboot skipped. Changes will be applied on next boot.${RESET}" ;;
