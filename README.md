@@ -1,6 +1,11 @@
 # system-scripts
 Collection of my utility scripts
 
-set-consoleblank:
+**set-consoleblank:**
 <pre> curl -fsSL https://raw.githubusercontent.com/camcattay/system-scripts/main/set-consoleblank.sh | bash -s -- 67 </pre>
+
+See Backups:
+<pre> ls /etc/default/grub.bak.* </pre>
+Remove Backups:
+<pre>rm /etc/default/grub.bak.* </pre>
 
