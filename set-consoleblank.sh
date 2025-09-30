@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # set-consoleblank.sh
 # Script to set consoleblank timeout in GRUB
 # Inteded for console-only systems
